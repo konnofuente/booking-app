@@ -1,0 +1,445 @@
+.image-section{
+    background-image: url('../../assets/pictures/header-background.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 200px 700px 0px #000000;
+    background-position: center;
+    position: relative;
+}
+li,ul,ol{
+    list-style-type: none;
+}
+
+div.image-text-container{
+    font-size: 50px;
+    color: white;
+    padding-top: 310px;
+    padding-left: 100px;
+    max-width: 800px;
+}
+span.image-text-line-2{
+    padding-left: 170px;
+}
+
+div.image-text-container svg{
+    position: absolute;
+    right: 250px;
+    color: #b89146;
+    cursor: pointer;
+}
+div.image-foot-container{
+    width: 83%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.image-footer-single-grid{
+    padding: 25px;
+    border-left: 1px solid #373939;
+    background-color: #0e1317;
+    font-size: 14px;
+    min-width: 250px;
+    height: 50px;
+}
+div.image-footer-single-grid-button{
+    background-color: #b89146;
+    padding: 0px;
+    min-width: 250px;
+    height: 100%;
+}
+
+p.white{
+    color: #999999;
+    margin: 5px 0px;
+    font-weight: 700;
+}
+.gold{
+    color: #b89146;
+    font-weight: 700;
+}
+p.black{
+    color: #0e1317;
+    font-weight: 700;
+}
+
+
+
+input[type="date"],
+select{
+    
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    font-weight: 700;
+    color: #b89146;
+    cursor: pointer;
+}
+input[type="date"]:focus,
+select:focus{
+    outline: none;
+}
+select option{
+    margin: 10px;
+    color: black;
+}
+.image-footer-select{
+    color: blue;
+}
+div.sectionSpaced{
+    padding: 120px;
+    /* background-color: red; */
+}
+div.sectionNoSpace{
+    padding: 0px;
+
+}
+div.sectionMidSpaced{
+    padding: 0px 120px;
+}
+div.tex3t-div{
+    padding: 20px 0px;
+}
+div.tex3t-div>*{
+    margin-bottom: 25px;
+}
+div.tex3t-div h2{
+    font-size: 45px;
+    font-weight: 500;
+}
+div.greyBack{
+    background-color:#f7f7f7;
+}
+div.luxury-room-type{
+    background-color: white;
+    height: fit-content;
+    text-align: center;
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 26px;
+    color: #0e1317;
+    margin: 75px 10px;
+    width: fit-content;
+}
+
+.type-active{
+    background-color: #b89146 !important;
+    color: white !important;
+    
+}
+
+div.luxury-room-type:hover{
+    cursor: pointer;
+}
+
+/*When entering: RED TO GREEN*/
+/* .item-enter-done{
+
+} */
+
+.item-enter { 
+/* This fires as soon ans the element enters the DOM */
+    opacity: 0;
+    transform: scale(0);
+}
+.item-enter-active {
+/*THis is where you add the Transition*/
+opacity: 1;
+transform: scale(1);
+transition: all 300ms ease-in;
+
+}
+.item-exit {
+/*This fires as soon as the showState is false*/
+
+transform: scale(1);
+position: absolute;
+}
+.item-exit-active { /*Animation that should apply as the element is currently leaving the DOM*/
+/*Fires as element leaves the DOM*/
+transform: scale(0);
+transition: all 300ms ease-in-out;
+
+}
+
+div.theGroup{
+    position: relative;
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: fit-content;
+}
+div.videoContainer{
+    height: 510px;
+    width: 100%;
+    background-color: black;
+    background-image: url(../../assets/pictures/fixed-background.jpg);
+    background-position: center;
+    background-attachment:fixed;
+    position: relative;
+
+}
+div.videoContainer::after{
+    content: '';
+    background-color: #0E1317;
+    opacity: 0.7;
+    position: absolute;
+    height: 510px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    
+}
+div.videoContainerContent{
+    color: white;
+    position: relative;
+    display: flex;
+    z-index: 10;
+    justify-content: space-around;
+    margin: auto;
+    padding-top: 30vh;
+}
+.videoContainerContent h2{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 500;
+}
+div.videcoContainerText{
+    width: 700px;
+}
+div.pic-zoom-anim{
+    background-size: 100%;
+    transition: background-size 0.3s ease-in-out;
+}
+div.pic-zoom-anim:hover{
+    background-size: 110%;
+}
+.theDotClass{
+    width: fit-content;
+    position:relative;
+    left: 260px;
+    bottom:100px;
+}
+button.lux-amenity-link{
+    background-color: transparent;
+    color: black;
+}
+
+div.sticky-side-bar-selection input,
+div.sticky-side-bar-selection input[type="date"],
+div.sticky-side-bar-selection select
+{
+    border: 1px solid #c4c4c4;
+    padding: 12px;
+    width: 90%;
+    border-radius: 5px;
+    color: black;
+}
+.mui-form-control{
+    padding: 0px;
+    width: 100%;
+    margin-bottom: 19px !important;
+    background-color: #ffffff;
+}
+body{
+    overflow-x: hidden;
+}
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+@media all and (max-width:1244px) and (min-width:786px){
+    .theDotClass{
+       bottom: 70px;
+    }
+}
+@media all and (max-width:1200px) and (min-width: 1024px){
+    div.image-text-container svg{
+        position: absolute;
+        right: 100px;
+    }
+    div.image-foot-container{
+        width: 80%;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+}
+
+@media all and (max-width:1024px){
+    p{
+        line-height:25px;;
+    }
+    div.image-text-container{
+        max-width: 100%;
+        width: 90%;
+        height: 100vh;
+        padding: 0px 10px;
+        padding-top: 250px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    span.image-text-line-2{
+        padding-left: 0px;
+    }
+
+    div.image-text-container svg{
+        position: unset;
+    }
+    div.image-section{
+        height: fit-content;
+        background-position: 30%;
+        width: 100%;
+    }
+    div.image-foot-container{
+        bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 500px;
+    }
+    div.image-footer-single-grid{
+        min-width: 200px;
+        
+    }
+    div.image-footer-single-grid-button{
+        padding: auto;
+    }
+    div.sectionSpaced, div.sectionMidSpaced{
+        padding: 30px;
+        margin-top: 50px;
+    }
+    div.sectionMidSpaced{
+        margin-top: 0px;
+    }
+    div.tex3t-div{
+        padding: 10px 0px;
+    }
+    div.tex3t-div>*{
+        margin-bottom: 15px;
+    }
+    div.tex3t-div h2{
+        font-size: 35px;
+        font-weight: 500;
+    }
+    div.theGroup{
+        row-gap: 0px;
+        column-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+    div.luxury-room-type{
+        margin: 10px;
+    }
+    div.videoContainer{
+        background-position: 30%;
+    }
+    div.videoContainerContent{
+        padding: 100px;
+    }
+}
+@media all and (max-width:786px){
+    .theDotClass{
+        width: fit-content;
+        position:relative;
+        left: 0;
+        right:0;
+        margin:20px auto;
+        bottom:20px;
+    }
+    div.theGroup{
+        row-gap: 0px;
+        column-gap: 10px;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) { /* Tablet Display */
+    div.luxury-room-type{
+        margin: 10px;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) { /* Tablet and some big ass phones */
+    div.luxury-room-type{
+        margin: 10px;
+    }
+    .videoContainerContent h2{
+        font-size: 45px;
+        line-height: 60px;
+        font-weight: 500;
+    }
+    div.videcoContainerText{
+        width: 100%;
+        text-align: center;
+    }
+    div.videoContainerText h2{
+        display: none;
+    }
+    div.videoContainerContent{
+        width: 100%;
+        display: block;
+        padding: 0px;
+        padding-top: 50px;
+    }
+    .videoContainerContent h2{
+        font-size: 40px;
+    }
+    div.luxury-room-type{
+        margin: 10px;
+    }
+    div.videoContainer-iconContainer{
+        margin: auto;
+        width: fit-content;
+        margin-top: 60px;
+    }
+    div.videoContainer{
+        height: 450px;
+    }
+    div.videoContainer::after{
+        height: 450px;
+    }
+}
+
+@media all and (max-width: 480px) { /* Telephone landscape and smaller stuffs */
+    div.image-footer-single-grid{
+        padding: 25px;
+    }
+    /* div.image-footer-single-grid-button{
+        
+    } */
+    div.image-text-container{
+        font-size: 30px;    
+    }
+    .videoContainerContent h2{
+        font-size: 35px;
+        line-height: 60px;
+        font-weight: 600;
+    }
+    div.videcoContainerText{
+        font-size: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    div.videoContainerContent{
+        width: 100%;
+        display: block;
+        padding: 0px;
+        padding-top: 30px;
+    }
+    div.luxury-room-type{
+        margin: 10px;
+    }
+    div.videoContainer-iconContainer{
+        margin: auto;
+        width: fit-content;
+        margin-top: 60px;
+    }
+}

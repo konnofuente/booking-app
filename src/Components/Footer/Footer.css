@@ -1,0 +1,68 @@
+div.footerDivContainer{
+    background-color: #0e1317;
+}
+div.footerDivContainer *{
+    color: white;
+}
+div.footerFirstSection{
+    padding: 60px;
+
+}
+ div.footerFirstSection * {
+    margin-bottom: 20px;
+ }
+div.iconsLinksDiv svg{
+    padding: 10px;
+    border-radius:50%;
+    border: 1px solid #8a8a8a;
+    fill: #8a8a8a;
+    margin-right: 20px;
+}
+div.infoIconsDiv p{
+    display: flex;
+    gap: 10px;
+}
+div.footerDivContainer input:focus{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #b89146;
+}
+div.footerDivContainer input{
+    border: 1px solid #333334;
+    background-color: transparent;
+    display: block;
+    height: 40px;
+    width: 250px;
+    outline: none;
+    padding: 10px;
+}
+
+div.footerSecondSection{
+    border-top: 1px solid #333334;
+    padding: 60px;
+}
+
+div.footerSecondSection >div{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.footerSecondSection a {
+    padding: 0px 20px;
+    border-right: 2px solid white;
+}
+
+div.footerSecondSection span{
+    color: #b89146;
+}
+
+@media all and (max-width:811px){
+    div.footerSecondSection >div{
+        display: unset;
+    }
+    div.footerSecondSection a {
+        display: block;
+        padding: 10px 0px;
+        border: none;
+    }
+}

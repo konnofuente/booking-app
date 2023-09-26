@@ -1,0 +1,21 @@
+.keyChange{
+    animation-name: slidein;
+    animation-duration: .8s;
+}
+
+@keyframes slidein {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media only screen and (max-width:976px){ /*From a minimum width of 0 till 976 pixels,*/
+    .keyChange{
+      display: none;
+    }
+  }
+  

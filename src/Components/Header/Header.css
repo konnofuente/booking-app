@@ -1,0 +1,112 @@
+.header-box{
+    height: 120px;
+    color: white;
+    position: absolute;
+    width: 100vw;
+    border-bottom: 1px solid #373939;
+    z-index: 20;
+}
+
+.sticky-box{
+    background-color: #0e1317;
+    height: 120px;
+    width: 100%;
+    color: white;
+    border-bottom: 1px solid grey;
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    animation-name: slideinHead;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+}
+div.mobile-drawer-container{
+    padding: 10px;
+    background-color: #0e1317;
+    color: white;
+}
+div.mobile-drawer-container .single-headerContainer-line{
+    padding: 20px 0px;
+}
+@keyframes slideinHead {
+    from {
+      top: -130px;
+    }
+  
+    to {
+      top: 0px;
+    }
+  }
+.logo{
+    font-family: 'Shantell Sans', cursive;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+img{
+    height: 70px;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+a.bigButton{
+    padding: 25px;
+}
+.header-box .links{
+    display: flex;
+}
+.sticky-box .links{
+    display: flex;
+}
+.sticky-box .links > *{
+    margin: 0px 30px;
+}
+.sticky-box .links a:hover{
+    color: #b89146;
+    transition: .4s;
+}
+.header-box .links > *{
+    margin: 0px 30px;
+}
+.header-box .links a:hover{
+    color: #b89146;
+    transition: .4s;
+}
+
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+@media all and (min-width: 1024px){ /* Desktop Displays */
+
+ }
+
+ @media all and (max-width:1024px){
+    div.header-box{
+        width: 90%;
+        padding: 0px 5%;
+    }
+    div.sticky-box{
+        width: 90%;
+        padding: 0px 5%;
+    }
+ }
+ 
+
+@media all and (min-width: 768px) and (max-width: 1024px) { /* Tablet Display */
+    
+}
+ 
+@media all and (min-width: 480px) and (max-width: 768px) { /* Tablet and some big ass phones */
+
+}
+ 
+@media all and (max-width: 480px) { /* Telephone landscape and smaller stuffs */
+
+}

@@ -1,0 +1,49 @@
+.grid-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.flex-arn{
+    display: flex;
+    justify-content: space-around;
+}
+.flex-btw{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-cnt{
+    display: flex;
+    align-items: center;
+}
+ button,
+.button
+{
+    border: none;
+    color: white;
+    background-color: #b89146;
+    padding: 13px 40px;
+    font-weight: 600;
+}
+button:hover,
+.button:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    transition: .3s;
+}
+button:disabled,
+button[disabled]{
+  background-color: #cccccc;
+  color: white !important;
+}
+button:disabled:hover,
+button[disabled]:hover{
+  cursor: not-allowed;
+  color: white !important;
+}
+.text-center{
+    text-align: center;
+}
+/*
+.big-btn{
+    padding: 13px 40px;
+} */
